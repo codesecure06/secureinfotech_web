@@ -4,6 +4,7 @@ import AOS from "aos";
 import { BiPhone } from "react-icons/bi";
 import { MdMailOutline } from "react-icons/md";
 import { VscHome } from "react-icons/vsc";
+import { useHistory } from "react-router-dom";
 // import $ from "jquery";
 
 AOS.init();
@@ -11,6 +12,7 @@ AOS.init();
 const Footer = () => {
   // const [scrollActive, setScrollActive] = useState(false);
   // const [scrollT, setScrollT] = useState(false);
+  const history = useHistory()
 
   useEffect(() => {
     // window.onscroll = () => {
@@ -30,17 +32,18 @@ const Footer = () => {
     //       // setScroll(true)
     //     }
     //   };
+    
   }, []);
 
-  const handleScrollTop = async () => {
-    await window.scrollTo({
+  const handleScrollTop = () => {
+    window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   };
 
   return (
-    <>
+    <div>
       <div className="container-fluid footer-main pt-4 pb-3">
         <div className="container py-5 px-md-5">
           <div className="row">
@@ -73,30 +76,30 @@ const Footer = () => {
                   <span>DIRECT LINK</span>
                 </div>
                 <div className="footer-title-divider"></div>
-                <div className="footer-link">
+                <div className="footer-link" onClick={() => history.push("/")}>
                   <div></div>
                   <span>Home</span>
                 </div>
-                <div className="footer-link">
+                <div className="footer-link" onClick={() => history.push("/about")}>
                   <div></div>
                   <span>About Us</span>
                 </div>
-                <div className="footer-link">
+                <div className="footer-link" onClick={() => history.push("/career")}>
                   <div></div>
                   <span>Career</span>
                 </div>
-                <div className="footer-link">
+                <div className="footer-link" onClick={() => history.push("/gallery")}>
                   <div></div>
                   <span>Gallery</span>
                 </div>
-                <div className="footer-link">
+                <div className="footer-link" onClick={() => history.push("/contactus")}>
                   <div></div>
                   <span>Contact Us</span>
                 </div>
               </div>
             </div>
 
-            <div className="col-md-4 position-relative px-md-5 mt-md-0 mt-5 d-flex flex-column justify-content-between">
+            <div className="col-md-4 position-relative px-md-4 mt-md-0 mt-5 d-flex flex-column justify-content-between">
               <div className="footer-content">
                 <div>
                   <span>INFO</span>
@@ -104,16 +107,17 @@ const Footer = () => {
                 <div className="footer-title-divider"></div>
                 <div className="footer-details">
                   <BiPhone size="1.2em" color="#00AFFF" />
-                  <span>Home</span>
+                  <span>+91 (261) 351-8743</span>
                 </div>
                 <div className="footer-details">
                   <MdMailOutline size="1.2em" color="#00AFFF" />
-                  <span>secureinfotech@gamil.com</span>
+                  <span>secure.games.studio@gmail.com</span>
                 </div>
                 <div className="footer-details align-items-start">
-                  <VscHome size="1.8em" color="#00AFFF" />
-                  <span>
-                    132, My Street, Kingston, New york 12401 United States
+                  <VscHome size="30px" className="mr-4" color="#00AFFF" />
+                  <span className="">
+                    303/304, Shantiniketan Flora Business Hub,<br /> Abrama Rd, beside
+                    Sanskartirth school, Mota Varachha, Surat, Gujarat 394105.
                   </span>
                 </div>
               </div>
@@ -165,7 +169,7 @@ const Footer = () => {
       <div className="scrollImg" onClick={handleScrollTop}>
         <img src={images.scrollTop} alt="" />
       </div>
-    </>
+    </div>
   );
 };
 

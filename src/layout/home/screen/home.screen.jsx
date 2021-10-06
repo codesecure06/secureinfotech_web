@@ -13,7 +13,7 @@ AOS.init()
 
 const HomeScreen = () => {
   return (
-    <>
+    <div>
       <Navbar />
       <Header />
       <Services />
@@ -21,7 +21,7 @@ const HomeScreen = () => {
       <Exp />
       <Clientreview />
       <Footer />
-    </>
+    </div>
   );
 };
 

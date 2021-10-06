@@ -24,7 +24,7 @@ const Demo = () => {
   }, []);
   
   return (
-    <>
+    <div>
       {/* <div className="wave-img"> */}
       {/* <img src={wave} alt="" className="img-fluid" /> */}
       {/* </div> */}
@@ -93,7 +93,7 @@ const Demo = () => {
             </nav>
             <div className="container-fluid headers-main">
             </div> */}
-    </>
+    </div>
   );
 };
 

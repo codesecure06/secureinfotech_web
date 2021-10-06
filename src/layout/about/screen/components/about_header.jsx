@@ -3,20 +3,35 @@ import React from "react";
 // import images from "../../../../apis/images";
 // import Particles from "react-particles-js";
 // import about from '../../../../assets/images/abc.svg'
+// import { TiHomeOutline } from "react-icons/ti";
 
-const AboutHeader = () => {
+const Header = () => {
   return (
-    <div className="container-fluid about-main">
+    <div className="container-fluid header-com-main">
       {/* <div className="about-compo-1"></div>
       <div className="about-compo-2"></div> */}
-      <div className="container h-100 about-main-section">
-        <div className="about-header-comp-A"></div>
-        <div className="about-header-comp-B"></div>
-        <div className="about-header-comp-C"></div>
+      <div className="container h-100 header-main-section">
+        <div className="header-comp-A"></div>
+        <div className="header-comp-B"></div>
+        <div className="header-comp-C"></div>
         <div className="row">
-          <div className="about-header-title">
+          <div className="header-title">
             <div>About Us</div>
-            <div>Home</div>
+            <div>&#8226; Home &#8226; About Us</div>
+          </div>
+          <div className="area">
+            <ul className="circles">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
           </div>
           {/* <div className="col-md-6 d-flex flex-column justify-content-center align-items-end">
             <div className="about-header-left">
@@ -51,4 +66,4 @@ const AboutHeader = () => {
   );
 };
 
-export default AboutHeader;
+export default Header;

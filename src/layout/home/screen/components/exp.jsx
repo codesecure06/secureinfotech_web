@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { RiEmotionHappyLine } from "react-icons/ri";
+// import $ from "jquery";
 import { CgNotes } from "react-icons/cg";
 import { BiSupport } from "react-icons/bi";
 import { FaUsers } from "react-icons/fa";
@@ -8,7 +9,38 @@ import { FaUsers } from "react-icons/fa";
 const Exp = () => {
   const history = useHistory();
 
-  useEffect(() => {}, [history.location.pathname]);
+  useEffect(() => {
+    // var a = 0;
+    // $(window).scroll(function () {
+    //   var oTop = $("#counter").offset().top - window.innerHeight;
+    //   if (a === 0 && $(window).scrollTop() > oTop) {
+    //     $(".counter-value").each(function () {
+    //       var $this = $(this),
+    //         countTo = $this.attr("data-count");
+    //       $({
+    //         countNum: $this.text(),
+    //       }).animate(
+    //         {
+    //           countNum: countTo,
+    //         },
+
+    //         {
+    //           duration: 2000,
+    //           easing: "swing",
+    //           step: function () {
+    //             $this.text(Math.floor(this.countNum));
+    //           },
+    //           complete: function () {
+    //             $this.text(this.countNum);
+    //             //alert('finished');
+    //           },
+    //         }
+    //       );
+    //     });
+    //     a = 1;
+    //   }
+    // });
+  }, [history.location.pathname]);
 
   return (
     <div className="exp-main pt-5">
@@ -23,15 +55,20 @@ const Exp = () => {
         </div>
         <div className="exp-content">
           <div className="row my-5">
-            <div className="col-md-3 exp-content-item mt-5">
+            <div
+              className="col-md-3 exp-content-item mt-5"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <div className="exp-content-main px-2 pb-3">
                 <div className="d-flex justify-content-center">
                   <div>
                     <RiEmotionHappyLine size="2em" color="#fff" />
                   </div>
                 </div>
-                <div>
-                  <div>291</div>
+                <div id="counter">
+                  <span className="counter-value" data-count="300"></span>
+                  <span>300+</span>
                   <div>Happy Clients</div>
                 </div>
                 {/* <div>
@@ -39,7 +76,11 @@ const Exp = () => {
                 </div> */}
               </div>
             </div>
-            <div className="col-md-3 exp-content-item mt-5">
+            <div
+              className="col-md-3 exp-content-item mt-5"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <div className="exp-content-main px-2 pb-3">
                 <div className="d-flex justify-content-center">
                   <div>
@@ -47,7 +88,8 @@ const Exp = () => {
                   </div>
                 </div>
                 <div>
-                  <div>521</div>
+                  <span className="counter-value" data-count="450"></span>
+                  <span>450+</span>
                   <div>Projects</div>
                 </div>
                 {/* <div>
@@ -55,7 +97,11 @@ const Exp = () => {
                 </div> */}
               </div>
             </div>
-            <div className="col-md-3 exp-content-item mt-5">
+            <div
+              className="col-md-3 exp-content-item mt-5"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               <div className="exp-content-main px-2 pb-3">
                 <div className="d-flex justify-content-center">
                   <div>
@@ -63,7 +109,8 @@ const Exp = () => {
                   </div>
                 </div>
                 <div>
-                  <div>1463</div>
+                  <span className="counter-value" data-count="4000"></span>
+                  <span>4000+</span>
                   <div>Hours Of Support</div>
                 </div>
                 {/* <div>
@@ -71,7 +118,11 @@ const Exp = () => {
                 </div> */}
               </div>
             </div>
-            <div className="col-md-3 exp-content-item mt-5">
+            <div
+              className="col-md-3 exp-content-item mt-5"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
               <div className="exp-content-main px-2 pb-3">
                 <div className="d-flex justify-content-center">
                   <div>
@@ -79,7 +130,8 @@ const Exp = () => {
                   </div>
                 </div>
                 <div>
-                  <div>15</div>
+                  <span className="counter-value" data-count="25"></span>
+                  <span>25+</span>
                   <div>Hard Workers</div>
                 </div>
                 {/* <div>

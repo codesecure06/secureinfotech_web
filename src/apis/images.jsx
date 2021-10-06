@@ -31,6 +31,13 @@ import footerFacebook from "../assets/images/footer-facebook.png";
 import footerInstagram from "../assets/images/footer-instagram.png";
 import footerLinkedin from "../assets/images/footer-linkedin.png";
 import footerTwitter from "../assets/images/footer-twitter.png";
+import clientReviewImg from '../assets/images/client-review-img.jpeg'
+import clientReview1 from '../assets/images/client1.jpeg'
+import clientReview2 from '../assets/images/client2.jpeg'
+import clientReview3 from '../assets/images/client3.jpeg'
+import clientReview4 from '../assets/images/client4.png'
+import cto from '../assets/images/CTO.jpeg'
+import ceo from '../assets/images/CEO.jpg'
 
 const images = {
   logo,
@@ -65,7 +72,14 @@ const images = {
   footerInstagram,
   footerLinkedin,
   footerTwitter,
-  logoTopBlue
+  logoTopBlue,
+  clientReviewImg,
+  clientReview1,
+  clientReview2,
+  clientReview3,
+  clientReview4,
+  cto,
+  ceo
 };
 
 export default images;

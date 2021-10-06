@@ -17,6 +17,8 @@ const Navbar = () => {
     function animJS() {
       window.onscroll = () => {
         let scrollY = window.pageYOffset;
+        // var oTop = $("#counter").offset().top - window.innerHeight;
+        // var a = 0
         // console.log(scrollY);
         if (scrollY > 0) {
           $(".navbar-main").addClass("active");
@@ -49,9 +51,71 @@ const Navbar = () => {
           $(".scroll-compo").css({ bottom: "0%", opacity: 0 });
           $(".scrollImg").css({ display: "none" });
         }
+
+        // if (a === 0 && (scrollY > oTop)) {
+        //   $(".counter-value").each(function () {
+        //     var $this = $(this),
+        //       countTo = $this.attr("data-count");
+        //     $({
+        //       countNum: $this.text(),
+        //     }).animate(
+        //       {
+        //         countNum: countTo,
+        //       },
+
+        //       {
+        //         duration: 2000,
+        //         easing: "swing",
+        //         step: function () {
+        //           $this.text(Math.floor(this.countNum));
+        //         },
+        //         complete: function () {
+        //           $this.text(this.countNum);
+        //           //alert('finished');
+        //         },
+        //       }
+        //     );
+        //   });
+        //   a = 1;
+        // }
       };
     }
+
+    // function animJS2() {
+    //   var a = 0;
+    //   $(window).scroll(function () {
+    //     var oTop = $("#counter").offset().top - window.innerHeight;
+    //     if (a === 0 && $(window).scrollTop() > oTop) {
+    //       $(".counter-value").each(function () {
+    //         var $this = $(this),
+    //           countTo = $this.attr("data-count");
+    //         $({
+    //           countNum: $this.text(),
+    //         }).animate(
+    //           {
+    //             countNum: countTo,
+    //           },
+
+    //           {
+    //             duration: 2000,
+    //             easing: "swing",
+    //             step: function () {
+    //               $this.text(Math.floor(this.countNum));
+    //             },
+    //             complete: function () {
+    //               $this.text(this.countNum);
+    //               //alert('finished');
+    //             },
+    //           }
+    //         );
+    //       });
+    //       a = 1;
+    //     }
+    //   });
+    // }
+
     animJS();
+    // animJS2();
   }, [history.location.pathname]);
 
   const handleClick = (item) => {
@@ -65,7 +129,7 @@ const Navbar = () => {
   };
 
   return (
-    <>
+    <div>
       <nav className="navbar-main shadow-sm">
         <div className="container">
           <div className="navbar-logo d-lg-block d-none">
@@ -220,8 +284,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      
-    </>
+    </div>
   );
 };
 

@@ -2,16 +2,17 @@ import React from "react";
 import Footer from "../../_components/footer";
 import Navbar from "../../_components/nav";
 import ContactForm from "./components/contact_form";
-import ContactHeader from "./components/contact_header";
+// import ContactHeader from "./components/contact_header";
 import AOS from 'aos'
+import Header from "../../_components/header";
 
 AOS.init()
 
 const ContactScreen = () => {
   return (
-    <>
+    <div>
       <Navbar />
-      <ContactHeader />
+      <Header page={"contact us"} />
       <ContactForm />
       <div>
         <iframe
@@ -24,7 +25,7 @@ const ContactScreen = () => {
         ></iframe>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

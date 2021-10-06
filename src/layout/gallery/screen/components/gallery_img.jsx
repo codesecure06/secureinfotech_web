@@ -28,7 +28,7 @@ const GalleryImg = () => {
               <div className="mt-2">Enjoy In Matheran</div>
             </div>
           </div>
-          <div className="col-md-6 px-md-5 py-3" data-aos="fade-up" data-aos-delay="200">
+          {/* <div className="col-md-6 px-md-5 py-3" data-aos="fade-up" data-aos-delay="200">
             <div className="gallery-img-1">
               <div className="w-100 h-100 position-relative">
                 <div className="gallery-img-date px-5 py-2">21/01/2021</div>
@@ -39,7 +39,7 @@ const GalleryImg = () => {
               </div>
               <div className="mt-2">Enjoy In Matheran</div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

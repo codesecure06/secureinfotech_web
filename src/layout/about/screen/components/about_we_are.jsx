@@ -23,10 +23,14 @@ const AboutWeAre = () => {
             <div id="wrapper1" className="about-left-img">
               <div className="about-img-bg"></div>
               <div id="outer1" className="">
-                <div className="itemwrapper2"  data-aos="fade-right">
+                <div className="itemwrapper2" data-aos="fade-right">
                   <img src={images.aboutpeople1} alt="bag" />
                 </div>
-                <div className="itemwrapper1" data-aos="fade-left" data-aos-delay="200">
+                <div
+                  className="itemwrapper1"
+                  data-aos="fade-left"
+                  data-aos-delay="200"
+                >
                   <img src={images.aboutpeople2} alt="pen" />
                 </div>
               </div>
@@ -36,55 +40,57 @@ const AboutWeAre = () => {
           <div className="col-lg-6 txt">
             <span data-aos="fade-up">Who we are?</span>
             <p className="text-muted" data-aos="fade-up" data-aos-delay="100">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eos
-              debitis harum nesciunt, earum corporis esse, non a laudantium quam
-              voluptatum fuga culpa illo perspiciatis quo corrupti minus, ea
-              sequi officiis fugit. Architecto temporibus vel ipsum quisquam sit
-              pariatur delectus ullam amet. Quos, id assumenda temporibus nobis
-              cupiditate est cum.
+              Secure infotech is an ISO 9001:2015 Certified Company with its
+              physical presence in India, and serving its clients across the
+              globe.
             </p>
             <p className="text-muted" data-aos="fade-up" data-aos-delay="200">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eos
-              debitis harum nesciunt, earum corporis esse, non a laudantium quam
-              voluptatum fuga culpa illo perspiciatis quo corrupti minus, ea
-              sequi officiis fugit. Architecto temporibus vel ipsum quisquam sit
-              pariatur delectus ullam amet. Quos, id assumenda temporibus nobis
-              cupiditate est cum.
+              Established in the year 2015, Secure Infotech has developed more
+              than 400 Mobile and Web Apps for over 300 clients from all parts
+              of the world. With a team of 20+ seasoned professionals, we offer
+              innovative solutions from our well-established development centers
+              as well as through onsite work environments.
             </p>
             <p className="text-muted" data-aos="fade-up" data-aos-delay="300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eos
-              debitis harum nesciunt, earum corporis esse, non a laudantium quam
-              voluptatum fuga culpa illo perspiciatis quo corrupti minus, ea
-              sequi officiis fugit. Architecto temporibus vel ipsum quisquam sit
-              pariatur delectus ullam amet. Quos, id assumenda temporibus nobis
-              cupiditate est cum.
+              With top-notch & affordable solutions, Secure Infotech has earned
+              notable associations from technology leaders like Microsoft,
+              NASSCOM, Amazon Web Services, Acquia, STPI, D&B and many more. We
+              are appreciated by hundreds of clients on AppFutura, Clutch,
+              GoodFirms, AppLancer, Appdexa and Extract, consistently being
+              among the Top-10 Mobile App Developers on these platforms.
             </p>
           </div>
         </div>
         <div className="row ">
           <div className="d-md-flex justify-content-between vision1">
-            <div data-aos="flip-up">
+            <div className="col-md-4" data-aos="flip-up">
               <img src={images.vision} alt="" />
               <h5>Our Vision</h5>
               <p className="text-muted">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
-                voluptatum aut in delectus ad quas rem perspiciatis,
+                Our vision is to develop in a constant manner and grow as a
+                major IT service provider to become a leading performer, in
+                providing quality Web and Software Development solutions in the
+                competitive global marketplace.
               </p>
             </div>
-            <div data-aos="flip-up" data-aos-delay="200">
+            <div className="col-md-4" data-aos="flip-up" data-aos-delay="200">
               <img src={images.mission} alt="" />
               <h5>Our Mission</h5>
               <p className="text-muted">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
-                voluptatum aut in delectus ad quas rem perspiciatis,
+                Our mission is to enhance business growth of our customers with
+                creative design, development and to deliver market defining high
+                quality solutions that create value and reliable competitive
+                advantage to customers around the globe.
               </p>
             </div>
-            <div data-aos="flip-up" data-aos-delay="400">
+            <div className="col-md-4" data-aos="flip-up" data-aos-delay="400">
               <img src={images.value} alt="" />
               <h5>Our Value</h5>
               <p className="text-muted">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
-                voluptatum aut in delectus ad quas rem perspiciatis,{" "}
+                Dedicated to providing high-quality products continually
+                striving for the best through innovation. And to be open,
+                honest, and fair... whatever we do, we do it right, and we do it
+                together.
               </p>
             </div>
           </div>
@@ -101,7 +107,11 @@ const AboutWeAre = () => {
           >
             {faq.map((item, i) => {
               return (
-                <Card className="col-md-8 faq-main-card mb-3" key={i} data-aos="fade-up">
+                <Card
+                  className="col-md-8 col-12 faq-main-card mb-3"
+                  key={i}
+                  data-aos="fade-up"
+                >
                   <Accordion.Toggle
                     eventKey={i + 1}
                     onClick={() => toggleActive(i + 1)}

@@ -5,7 +5,7 @@ const Services = () => {
   const data = [
     {
       id: 1,
-      title: "Website Development",
+      title: "UI / UX",
       icon: () => (
         <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
           <path
@@ -43,11 +43,11 @@ const Services = () => {
         </svg>
       ),
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eum modi. Minus debitis labore est quia culpa eum necessitatibus libero molestias vitae nostrum? Suscipit debitis aliquam tempora. Libero, consequatur totam.",
+        "An impressive UI goes beyond capturing the user’s attention, creating outstanding UX, and building the business brand. Hence, every business should focus on creating immersive UI designs that drive improved UX.",
     },
     {
       id: 2,
-      title: "Application Development",
+      title: "Mobile Application",
       icon: () => (
         <svg width="22" height="40" viewBox="0 0 32 50" fill="none">
           <path
@@ -70,7 +70,7 @@ const Services = () => {
         </svg>
       ),
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eum modi. Minus debitis labore est quia culpa eum necessitatibus libero molestias vitae nostrum? Suscipit debitis aliquam tempora. Libero, consequatur totam.",
+        "Our highly experienced and dedicated offshore developers will provide you with full-cycle mobile app development services, design, and development of the mobile application and further providing further development scale-up.",
     },
     {
       id: 3,
@@ -142,7 +142,7 @@ const Services = () => {
         </svg>
       ),
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eum modi. Minus debitis labore est quia culpa eum necessitatibus libero molestias vitae nostrum? Suscipit debitis aliquam tempora. Libero, consequatur totam.",
+        "We offer full-scale digital marketing and consulting services for startups and companies with customized SEO/PPC and social media strategies to land customers to your online destination.",
     },
     {
       id: 4,
@@ -177,7 +177,7 @@ const Services = () => {
         </svg>
       ),
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eum modi. Minus debitis labore est quia culpa eum necessitatibus libero molestias vitae nostrum? Suscipit debitis aliquam tempora. Libero, consequatur totam.",
+        "An E-commerce enabled website provides the most cost-effective way of promoting your business online. You can reach out to customers worldwide and offer them your services and products directly through the web.",
     },
     {
       id: 5,
@@ -234,7 +234,7 @@ const Services = () => {
         </svg>
       ),
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eum modi. Minus debitis labore est quia culpa eum necessitatibus libero molestias vitae nostrum? Suscipit debitis aliquam tempora. Libero, consequatur totam.",
+        "Our offshore software developers have in-depth knowledge of major platforms used for custom software development services. we are equipped to meet your project requirements on creative benchmarks.",
     },
     {
       id: 6,
@@ -336,8 +336,7 @@ const Services = () => {
         </svg>
       ),
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eum modi. Minus debitis labore est quia culpa eum necessitatibus libero molestias vitae nostrum? Suscipit debitis aliquam tempora. Libero, consequatur totam.",
-    },
+       "Our game development team is a highly expert in making 3D games and application using Unity 3D tool. We are making a game for various platforms like iPhone/Ipad and Androids. We support you from the initials to final support." },
   ];
 
   return (

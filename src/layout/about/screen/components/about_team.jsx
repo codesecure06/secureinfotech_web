@@ -13,20 +13,24 @@ const AboutTeam = () => {
           </p>
         </div>
         <div className="d-md-flex py-5 justify-content-center text-center justify-content-around">
-          <div className="pt-md-0 pt-4" data-aos="zoom-in" >
-            <img src={images.teamMember1} alt="" />
-            <h5>Adaim mrala</h5>
-            <p className="text-muted">IT Service officer</p>
+          <div className="pt-md-0 pt-4" data-aos="zoom-in">
+            <div className="about-team-imgss">
+              <img src={images.ceo} alt="" className="rounded img-fluid mb-3" />
+            </div>
+            <h5>Nimesh Senjaliya</h5>
+            <p className="text-muted">CEO ( Chief executive officer )</p>
           </div>
-          <div className="pt-lg-5 pt-4" data-aos="zoom-in" data-aos-delay="100">
+          {/* <div className="pt-lg-5 pt-4" data-aos="zoom-in" data-aos-delay="100">
             <img src={images.teamMember2} alt="" />
             <h5>Adaim mrala</h5>
             <p className="text-muted">IT Service officer</p>
-          </div>
+          </div> */}
           <div className="pt-md-0 pt-4" data-aos="zoom-in" data-aos-delay="200">
-            <img src={images.teamMember3} alt="" />
-            <h5>Adaim mrala</h5>
-            <p className="text-muted">IT Service officer</p>
+            <div className="about-team-imgss">
+              <img src={images.cto} alt="" className="rounded img-fluid mb-3" />
+            </div>
+            <h5>Yogesh Savaliya</h5>
+            <p className="text-muted">CTO ( Chief technology officer )</p>
           </div>
         </div>
       </div>

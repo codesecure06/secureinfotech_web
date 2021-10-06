@@ -66,9 +66,10 @@ const Technology = () => {
           <div className="content-title">Our Technology</div>
           <div className="content-tagline px-md-5 my-4 d-flex flex-column align-items-center">
             <div className="col-md-8">
-              We’ve spent over 15 years carefully curating the best local and
-              international talent to provide you with flexible staffing
-              solutions that will reduce your costs and give better results.
+              Secure Infotech knows how to use technologies up to their full
+              potential. Our focus is on bringing your ideas to life and making
+              dreams a reality. Problem-solving and coming up with unique
+              solutions fuels us to tread on the path of development.
             </div>
           </div>
         </div>
@@ -105,7 +106,7 @@ const Technology = () => {
                 return (
                   <div className="our-technology-menu-1-item mx-md-5 mx-2 our-tech-item bg-none">
                     <div>{item.icon}</div>
-                    <div></div>
+                    {/* <div></div>
                     <div>
                       <div></div>
                     </div>
@@ -129,7 +130,7 @@ const Technology = () => {
                     </div>
                     <div>
                       <div></div>
-                    </div>
+                    </div> */}
                   </div>
                 );
               })}

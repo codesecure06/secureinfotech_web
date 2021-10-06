@@ -101,7 +101,7 @@
     height: 10px;
     border-radius: 12px;
     background: #0053ff;
-    animation: footer-content 4s linear infinite;
+    animation: footer-content 4s ease-in-out infinite;
   }
 }
 
@@ -121,7 +121,7 @@
     height: 10px;
     border-radius: 12px;
     background: #0053ff;
-    animation: footer-content-B 4s linear infinite;
+    animation: footer-content-B 4s ease-in-out infinite;
   }
 }
 
