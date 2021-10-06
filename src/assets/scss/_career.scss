@@ -1,0 +1,174 @@
+.current-opening-main {
+  background: #eff5ff;
+
+  .current-opening-vacancy {
+    display: flex;
+    // flex-direction: column;
+
+    > div {
+      display: flex;
+
+      > div {
+        padding: 0 10px;
+        // width: 80%;
+        background: #fff;
+        border-radius: 12px;
+      }
+
+      // &:nth-child(even) {
+      //   justify-content: flex-end;
+      // }
+    }
+  }
+
+  .current-opening-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+  }
+
+  .current-opening-btn {
+    display: flex;
+
+    > div {
+      padding: 1px;
+      background: linear-gradient(256deg, #00d3ff, #0053ff);
+
+      > button {
+        background: #fff;
+        border: none;
+        font-size: 16px;
+        font-weight: 700;
+        transition: all 0.2s;
+
+        > span {
+          transition: all 0.2s;
+          background: -webkit-linear-gradient(256deg, #00d3ff, #0053ff);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        &:hover {
+          background: linear-gradient(256deg, #00d3ff, #0053ff);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+
+          > span {
+            // transition: all 0.2s;
+            background: #fff;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+      }
+    }
+  }
+
+  .current-opening-detail {
+    > span {
+      font-size: 16px;
+
+      &:nth-child(1) {
+        color: #71a1ff;
+        font-weight: 600;
+      }
+
+      &:nth-child(2) {
+        padding-left: 6px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 998px) {
+  .current-opening-main {
+    .current-opening-vacancy {
+      > div {
+        > div {
+          width: 100%;
+        }
+
+        &:nth-child(even) {
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+}
+
+.carrer-form {
+  background: #fff;
+  border-radius: 12px;
+
+  .career-all-job {
+    cursor: pointer;
+    background: -webkit-linear-gradient(#00a7ff, #0080ff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    > span {
+      &:nth-child(1) {
+        font-size: 22px;
+      }
+    }
+  }
+
+  .career-job-tag {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .career-job-form-input {
+    > div {
+      > .career-job-input {
+        border: 1px solid rgb(189, 189, 189);
+        border-bottom: 3px solid rgb(189, 189, 189);
+
+        font-size: 16px;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+
+  .career-job-upload {
+    > input[type="file"] {
+      display: none;
+    }
+
+    > label {
+      padding: 2px 3px;
+      font-size: 16px;
+      font-weight: 700;
+      border-width: 2px 2px 4px 2px;
+      border-image: linear-gradient(45deg, #00c8ff 0%, #0060ff 100%);
+      border-image-slice: 9;
+      border-style: solid;
+      background: -webkit-linear-gradient(#00a7ff, #0080ff);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .career-job-input-area {
+    border: 1px solid rgb(189, 189, 189);
+    border-bottom: 3px solid rgb(189, 189, 189);
+    height: 150px;
+
+    &:focus {
+        outline: none;
+    }
+  }
+
+  .career-job-submit {
+    > button {
+      border: none;
+      background: linear-gradient(180deg, #009eff 0%, #0088ff 100%);
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+}
