@@ -4,15 +4,15 @@ import React from "react";
 
 const Loader = () => {
   return (
-    <div className="container-fluid loader-main">
-      {/* <div className="loader-one">
+    <div className="loader-main">
+      <div className="loader">
         <div className="note-0"></div>
         <div className="note-1"></div>
         <div className="note-2"></div>
         <div className="note-3"></div>
         <div className="note-4"></div>
-      </div> */}
-      <div>Loading...</div>
+      </div>
+      <div className="status">Loading...</div>
     </div>
   );
 };

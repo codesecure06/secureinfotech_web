@@ -1,4 +1,4 @@
-import React, { Suspense, lazy, useRef } from "react";
+import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -11,8 +11,7 @@ import "./assets/scss/_gallery.scss";
 import "./assets/scss/_career.scss";
 import "./assets/scss/_loader.scss";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
-import { gsap } from "gsap/all";
+import Loader from "./layout/_components/loader";
 // import "./demo/demo.scss"
 // import Demo from "./demo/demo";
 
@@ -26,44 +25,20 @@ const CareerJobApply = lazy(() =>
 );
 
 const App = () => {
-  let appRef = useRef(null);
-
-  useEffect(() => {
-    gsap.to(appRef.current, {
-      duration: 1,
-    });
-  }, []);
-
   return (
-    <div ref={appRef}>
-      {/* <Demo /> */}
-      <BrowserRouter>
-        <Suspense
-          fallback={
-            <div className="loader-main">
-              <div className="loader">
-                <div className="note-0"></div>
-                <div className="note-1"></div>
-                <div className="note-2"></div>
-                <div className="note-3"></div>
-                <div className="note-4"></div>
-              </div>
-              <div className="status">Loading...</div>
-            </div>
-          }
-        >
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/gallery" component={Gallery} />
-            <Route exact path="/career" component={Career} />
-            <Route exact path="/career/:jobtitle" component={CareerJobApply} />
-            <Route exact path="/contactus" component={Contact} />
-            <Route exact path="*" component={() => <div>404</div>} />
-          </Switch>
+    <BrowserRouter>
+      <Switch>
+        <Suspense fallback={<div>Loading</div>}>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/gallery" component={Gallery} />
+          <Route exact path="/career" component={Career} />
+          <Route exact path="/career/:jobtitle" component={CareerJobApply} />
+          <Route exact path="/contactus" component={Contact} />
+          <Route exact path="*" component={() => <div>404</div>} />
         </Suspense>
-      </BrowserRouter>
-    </div>
+      </Switch>
+    </BrowserRouter>
   );
 };
 
